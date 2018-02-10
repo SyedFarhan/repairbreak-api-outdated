@@ -1,6 +1,5 @@
 package com.repairbreak;
 
-import com.repairbreak.Customer;
 
 public class Device {
     private String device;

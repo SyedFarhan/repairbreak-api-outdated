@@ -48,4 +48,11 @@ public class Customer {
     public void addDevice(Device device) {
         devices.add(device);
     }
+
+    @Override
+    public String toString() {
+        return "Customer name: " + this.getName() + "%n" +
+                "number: " + this.getNumber() + "%n" +
+                "email: " + this.getEmail();
+    }
 }
