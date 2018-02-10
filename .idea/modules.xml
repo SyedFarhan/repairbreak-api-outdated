@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/repairbreak-api.iml" filepath="$PROJECT_DIR$/.idea/modules/repairbreak-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/repairbreak-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/repairbreak-api_main.iml" group="repairbreak-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/repairbreak-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/repairbreak-api_test.iml" group="repairbreak-api" />
+    </modules>
+  </component>
+</project>
