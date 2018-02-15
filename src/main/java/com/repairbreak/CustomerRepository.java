@@ -1,5 +1,6 @@
 package com.repairbreak;
 
-@
-public class CustomerRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface CustomerRepository extends CrudRepository<Customer, String> {
 }

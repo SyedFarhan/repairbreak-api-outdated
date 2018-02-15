@@ -1,21 +1,34 @@
 package com.repairbreak;
 
 
+import javax.persistence.*;
+
+@Entity
 public class Device {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private String id;
     private String device;
     private String model;
     private String color;
-    private String imei;
+    @ManyToOne
     private Customer customer;
 
     public Device() { } // JPA only
 
-    public Device(String device, String model, String color, String imei, Customer customer) {
+    public Device(String device, String model, String color, Customer customer) {
         this.device = device;
         this.model = model;
         this.color = color;
-        this.imei = imei;
         this.customer = customer;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getDevice() {
@@ -40,14 +53,6 @@ public class Device {
 
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public String getImei() {
-        return imei;
-    }
-
-    public void setImei(String imei) {
-        this.imei = imei;
     }
 
     public Customer getCustomer() {

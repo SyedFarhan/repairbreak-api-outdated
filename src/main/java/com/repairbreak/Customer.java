@@ -1,7 +1,6 @@
 package com.repairbreak;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,17 +8,18 @@ import java.util.List;
 public class Customer {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
     private String name;
     private String number;
     private String email;
-    private List<Device> devices = new ArrayList<Device>();;
+    @OneToMany
+    private List<Device> devices = new ArrayList<Device>();
 
     public Customer() {
     } // JPA only
 
-    public Customer(String id, String name, String number, String email) {
-        this.id = id;
+    public Customer(String name, String number, String email) {
         this.name = name;
         this.number = number;
         this.email = email;
@@ -27,10 +27,6 @@ public class Customer {
 
     public String getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getName() {
