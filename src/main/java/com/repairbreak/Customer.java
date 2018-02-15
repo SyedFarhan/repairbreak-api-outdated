@@ -1,20 +1,36 @@
 package com.repairbreak;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class Customer {
+
+    @Id
+    private String id;
     private String name;
     private String number;
     private String email;
     private List<Device> devices = new ArrayList<Device>();;
 
-    public Customer() {} // JPA only
+    public Customer() {
+    } // JPA only
 
-    public Customer(String name, String number, String email) {
+    public Customer(String id, String name, String number, String email) {
+        this.id = id;
         this.name = name;
         this.number = number;
         this.email = email;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
