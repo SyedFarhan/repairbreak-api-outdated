@@ -1,4 +1,6 @@
-package com.repairbreak;
+package com.repairbreak.customer;
+
+import com.repairbreak.device.Device;
 
 import javax.persistence.*;
 import java.util.ArrayList;

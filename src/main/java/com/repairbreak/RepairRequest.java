@@ -1,6 +1,9 @@
 package com.repairbreak;
 
 
+import com.repairbreak.customer.Customer;
+import com.repairbreak.device.Device;
+
 public class RepairRequest extends Request {
     private Customer customer;
     private Device device;

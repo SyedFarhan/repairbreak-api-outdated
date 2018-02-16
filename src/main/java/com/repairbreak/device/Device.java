@@ -1,5 +1,7 @@
-package com.repairbreak;
+package com.repairbreak.device;
 
+
+import com.repairbreak.customer.Customer;
 
 import javax.persistence.*;
 

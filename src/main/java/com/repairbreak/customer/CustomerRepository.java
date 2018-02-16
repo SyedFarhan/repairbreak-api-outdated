@@ -1,4 +1,4 @@
-package com.repairbreak;
+package com.repairbreak.customer;
 
 import org.springframework.data.repository.CrudRepository;
 
